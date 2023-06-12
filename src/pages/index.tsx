@@ -1,12 +1,8 @@
-import { useLayoutEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import useInitialState from "@/hooks/useInitialState";
+import { Navigate } from "react-router-dom";
 
 export default () => {
-  const navigator = useNavigate();
+  const { initialState } = useInitialState();
 
-  useLayoutEffect(() => {
-    navigator("/login");
-  });
-
-  return <div>index</div>;
+  return <Navigate to={initialState!.login ? "/home" : "/login"} />;
 };

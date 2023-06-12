@@ -13,6 +13,18 @@ dependencies:
   axios:
     specifier: ^1.4.0
     version: registry.npmjs.org/axios@1.4.0
+  js-cookie:
+    specifier: ^3.0.5
+    version: registry.npmjs.org/js-cookie@3.0.5
+  microsoft-cognitiveservices-speech-sdk:
+    specifier: ^1.29.0
+    version: registry.npmjs.org/microsoft-cognitiveservices-speech-sdk@1.29.0
+  mousetrap:
+    specifier: ^1.6.5
+    version: registry.npmjs.org/mousetrap@1.6.5
+  querystring:
+    specifier: ^0.2.1
+    version: registry.npmjs.org/querystring@0.2.1
   react:
     specifier: ^18.2.0
     version: registry.npmjs.org/react@18.2.0
@@ -22,11 +34,23 @@ dependencies:
   react-router-dom:
     specifier: ^6.11.2
     version: registry.npmjs.org/react-router-dom@6.11.2(react-dom@18.2.0)(react@18.2.0)
+  storejs:
+    specifier: ^2.0.5
+    version: registry.npmjs.org/storejs@2.0.5
+  zustand:
+    specifier: ^4.3.8
+    version: registry.npmjs.org/zustand@4.3.8(react@18.2.0)
 
 devDependencies:
   '@tauri-apps/cli':
     specifier: ^1.3.1
     version: registry.npmjs.org/@tauri-apps/cli@1.3.1
+  '@types/js-cookie':
+    specifier: ^3.0.3
+    version: registry.npmjs.org/@types/js-cookie@3.0.3
+  '@types/mousetrap':
+    specifier: ^1.6.11
+    version: registry.npmjs.org/@types/mousetrap@1.6.11
   '@types/node':
     specifier: ^18.7.10
     version: registry.npmjs.org/@types/node@18.7.10
@@ -1363,6 +1387,18 @@ packages:
       '@tauri-apps/cli-win32-x64-msvc': registry.npmjs.org/@tauri-apps/cli-win32-x64-msvc@1.3.1
     dev: true
 
+  registry.npmjs.org/@types/js-cookie@3.0.3:
+    resolution: {integrity: sha512-Xe7IImK09HP1sv2M/aI+48a20VX+TdRJucfq4vfRVy6nWN8PYPOEnlMRSgxJAgYQIXJVL8dZ4/ilAM7dWNaOww==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@types/js-cookie/-/js-cookie-3.0.3.tgz}
+    name: '@types/js-cookie'
+    version: 3.0.3
+    dev: true
+
+  registry.npmjs.org/@types/mousetrap@1.6.11:
+    resolution: {integrity: sha512-F0oAily9Q9QQpv9JKxKn0zMKfOo36KHCW7myYsmUyf2t0g+sBTbG3UleTPoguHdE1z3GLFr3p7/wiOio52QFjQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@types/mousetrap/-/mousetrap-1.6.11.tgz}
+    name: '@types/mousetrap'
+    version: 1.6.11
+    dev: true
+
   registry.npmjs.org/@types/node@18.7.10:
     resolution: {integrity: sha512-SST7B//wF7xlGoLo1IEVB0cQ4e7BgXlDk5IaPgb5s0DlYLjb4if07h8+0zbQIvahfPNXs6e7zyT0EH1MqaS+5g==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@types/node/-/node-18.7.10.tgz}
     name: '@types/node'
@@ -1441,6 +1477,24 @@ packages:
     version: 1.1.0
     dependencies:
       object-assign: registry.npmjs.org/object-assign@4.1.1
+    dev: false
+
+  registry.npmjs.org/agent-base@5.1.1:
+    resolution: {integrity: sha512-TMeqbNl2fMW0nMjTEPOwe3J/PRFP4vqeoNuQMG0HlMrtm5QxKqdvAkZ1pRBQ/ulIyDD5Yq0nJ7YbdD8ey0TO3g==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/agent-base/-/agent-base-5.1.1.tgz}
+    name: agent-base
+    version: 5.1.1
+    engines: {node: '>= 6.0.0'}
+    dev: false
+
+  registry.npmjs.org/agent-base@6.0.2:
+    resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/agent-base/-/agent-base-6.0.2.tgz}
+    name: agent-base
+    version: 6.0.2
+    engines: {node: '>= 6.0.0'}
+    dependencies:
+      debug: registry.npmjs.org/debug@4.3.4
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.npmjs.org/ansi-styles@3.2.1:
@@ -1594,6 +1648,16 @@ packages:
     version: 1.0.2
     dev: true
 
+  registry.npmjs.org/bent@7.3.12:
+    resolution: {integrity: sha512-T3yrKnVGB63zRuoco/7Ybl7BwwGZR0lceoVG5XmQyMIH9s19SV5m+a8qam4if0zQuAmOQTyPTPmsQBdAorGK3w==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/bent/-/bent-7.3.12.tgz}
+    name: bent
+    version: 7.3.12
+    dependencies:
+      bytesish: registry.npmjs.org/bytesish@0.4.4
+      caseless: registry.npmjs.org/caseless@0.12.0
+      is-stream: registry.npmjs.org/is-stream@2.0.1
+    dev: false
+
   registry.npmjs.org/binary-extensions@2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz}
     name: binary-extensions
@@ -1632,6 +1696,12 @@ packages:
       update-browserslist-db: registry.npmjs.org/update-browserslist-db@1.0.11(browserslist@4.21.7)
     dev: true
 
+  registry.npmjs.org/bytesish@0.4.4:
+    resolution: {integrity: sha512-i4uu6M4zuMUiyfZN4RU2+i9+peJh//pXhd9x1oSe1LBkZ3LEbCoygu8W0bXTukU1Jme2txKuotpCZRaC3FLxcQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/bytesish/-/bytesish-0.4.4.tgz}
+    name: bytesish
+    version: 0.4.4
+    dev: false
+
   registry.npmjs.org/camelcase-css@2.0.1:
     resolution: {integrity: sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/camelcase-css/-/camelcase-css-2.0.1.tgz}
     name: camelcase-css
@@ -1644,6 +1714,12 @@ packages:
     name: caniuse-lite
     version: 1.0.30001492
     dev: true
+
+  registry.npmjs.org/caseless@0.12.0:
+    resolution: {integrity: sha512-4tYFyifaFfGacoiObjJegolkwSU4xQNGbVgUiNYVUxbQ2x2lUsFvY4hVgVzGiIe6WLOPqycWXA40l+PWsxthUw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/caseless/-/caseless-0.12.0.tgz}
+    name: caseless
+    version: 0.12.0
+    dev: false
 
   registry.npmjs.org/chalk@2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/chalk/-/chalk-2.4.2.tgz}
@@ -1766,7 +1842,6 @@ packages:
         optional: true
     dependencies:
       ms: registry.npmjs.org/ms@2.1.2
-    dev: true
 
   registry.npmjs.org/delayed-stream@1.0.0:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz}
@@ -1987,6 +2062,18 @@ packages:
       function-bind: registry.npmjs.org/function-bind@1.1.1
     dev: true
 
+  registry.npmjs.org/https-proxy-agent@4.0.0:
+    resolution: {integrity: sha512-zoDhWrkR3of1l9QAL8/scJZyLu8j/gBkcwcaQOZh7Gyh/+uJQzGVETdgT30akuwkpL8HTRfssqI3BZuV18teDg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-4.0.0.tgz}
+    name: https-proxy-agent
+    version: 4.0.0
+    engines: {node: '>= 6.0.0'}
+    dependencies:
+      agent-base: registry.npmjs.org/agent-base@5.1.1
+      debug: registry.npmjs.org/debug@4.3.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   registry.npmjs.org/inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz}
     name: inflight
@@ -2042,12 +2129,26 @@ packages:
     engines: {node: '>=0.12.0'}
     dev: true
 
+  registry.npmjs.org/is-stream@2.0.1:
+    resolution: {integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/is-stream/-/is-stream-2.0.1.tgz}
+    name: is-stream
+    version: 2.0.1
+    engines: {node: '>=8'}
+    dev: false
+
   registry.npmjs.org/jiti@1.18.2:
     resolution: {integrity: sha512-QAdOptna2NYiSSpv0O/BwoHBSmz4YhpzJHyi+fnMRTXFjp7B8i/YG5Z8IfusxB1ufjcD2Sre1F3R+nX3fvy7gg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/jiti/-/jiti-1.18.2.tgz}
     name: jiti
     version: 1.18.2
     hasBin: true
     dev: true
+
+  registry.npmjs.org/js-cookie@3.0.5:
+    resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/js-cookie/-/js-cookie-3.0.5.tgz}
+    name: js-cookie
+    version: 3.0.5
+    engines: {node: '>=14'}
+    dev: false
 
   registry.npmjs.org/js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz}
@@ -2152,6 +2253,22 @@ packages:
       picomatch: registry.npmjs.org/picomatch@2.3.1
     dev: true
 
+  registry.npmjs.org/microsoft-cognitiveservices-speech-sdk@1.29.0:
+    resolution: {integrity: sha512-/NaDni70OR5x0FPG6LD/aOkmfLIsOwqpw0UsijcHbH+U0q6FPAX1VZVlv6ZMvkObw3k/FJv0N9CFNsN1P4M7kA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/microsoft-cognitiveservices-speech-sdk/-/microsoft-cognitiveservices-speech-sdk-1.29.0.tgz}
+    name: microsoft-cognitiveservices-speech-sdk
+    version: 1.29.0
+    dependencies:
+      agent-base: registry.npmjs.org/agent-base@6.0.2
+      bent: registry.npmjs.org/bent@7.3.12
+      https-proxy-agent: registry.npmjs.org/https-proxy-agent@4.0.0
+      uuid: registry.npmjs.org/uuid@9.0.0
+      ws: registry.npmjs.org/ws@7.5.9
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+    dev: false
+
   registry.npmjs.org/mime-db@1.52.0:
     resolution: {integrity: sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz}
     name: mime-db
@@ -2176,11 +2293,16 @@ packages:
       brace-expansion: registry.npmjs.org/brace-expansion@1.1.11
     dev: true
 
+  registry.npmjs.org/mousetrap@1.6.5:
+    resolution: {integrity: sha512-QNo4kEepaIBwiT8CDhP98umTetp+JNfQYBWvC1pc6/OAibuXtRcxZ58Qz8skvEHYvURne/7R8T5VoOI7rDsEUA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/mousetrap/-/mousetrap-1.6.5.tgz}
+    name: mousetrap
+    version: 1.6.5
+    dev: false
+
   registry.npmjs.org/ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/ms/-/ms-2.1.2.tgz}
     name: ms
     version: 2.1.2
-    dev: true
 
   registry.npmjs.org/mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/mz/-/mz-2.7.0.tgz}
@@ -2406,6 +2528,14 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       react: registry.npmjs.org/react@18.2.0
+    dev: false
+
+  registry.npmjs.org/querystring@0.2.1:
+    resolution: {integrity: sha512-wkvS7mL/JMugcup3/rMitHmd9ecIGd2lhFhK9N3UUQ450h66d1r3Y9nvXzQAW1Lq+wyx61k/1pfKS5KuKiyEbg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/querystring/-/querystring-0.2.1.tgz}
+    name: querystring
+    version: 0.2.1
+    engines: {node: '>=0.4.x'}
+    deprecated: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
     dev: false
 
   registry.npmjs.org/queue-microtask@1.2.3:
@@ -3272,6 +3402,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  registry.npmjs.org/storejs@2.0.5:
+    resolution: {integrity: sha512-x+D6nhQDx6FVVFap8f9Fyj9o3GH02mgjmu4/W432HrR1S+rGBCUUpViPVtcersKJ8BAt28RA4A4I35Oj3J59Xw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/storejs/-/storejs-2.0.5.tgz}
+    name: storejs
+    version: 2.0.5
+    dev: false
+
   registry.npmjs.org/string-convert@0.2.1:
     resolution: {integrity: sha512-u/1tdPl4yQnPBjnVrmdLo9gtuLvELKsAoRapekWggdiQNvvvum+jYF329d84NAa660KQw7pB2n36KrIKVoXa3A==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/string-convert/-/string-convert-0.2.1.tgz}
     name: string-convert
@@ -3487,6 +3623,13 @@ packages:
     version: 1.0.2
     dev: true
 
+  registry.npmjs.org/uuid@9.0.0:
+    resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/uuid/-/uuid-9.0.0.tgz}
+    name: uuid
+    version: 9.0.0
+    hasBin: true
+    dev: false
+
   registry.npmjs.org/vite@4.2.1(@types/node@18.7.10):
     resolution: {integrity: sha512-7MKhqdy0ISo4wnvwtqZkjke6XN4taqQ2TBaTccLIpOKv7Vp2h4Y+NpmWCnGDeSvvn45KxvWgGyb0MkHvY1vgbg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/vite/-/vite-4.2.1.tgz}
     id: registry.npmjs.org/vite/4.2.1
@@ -3538,6 +3681,21 @@ packages:
     version: 1.0.2
     dev: true
 
+  registry.npmjs.org/ws@7.5.9:
+    resolution: {integrity: sha512-F+P9Jil7UiSKSkppIiD94dN07AwvFixvLIj1Og1Rl9GGMuNipJnV9JzjD6XuqmAeiswGvUmNLjr5cFuXwNS77Q==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/ws/-/ws-7.5.9.tgz}
+    name: ws
+    version: 7.5.9
+    engines: {node: '>=8.3.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: ^5.0.2
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+    dev: false
+
   registry.npmjs.org/yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz}
     name: yallist
@@ -3550,3 +3708,22 @@ packages:
     version: 2.3.1
     engines: {node: '>= 14'}
     dev: true
+
+  registry.npmjs.org/zustand@4.3.8(react@18.2.0):
+    resolution: {integrity: sha512-4h28KCkHg5ii/wcFFJ5Fp+k1J3gJoasaIbppdgZFO4BPJnsNxL0mQXBSFgOgAdCdBj35aDTPvdAJReTMntFPGg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/zustand/-/zustand-4.3.8.tgz}
+    id: registry.npmjs.org/zustand/4.3.8
+    name: zustand
+    version: 4.3.8
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      immer: '>=9.0'
+      react: '>=16.8'
+    peerDependenciesMeta:
+      immer:
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      react: registry.npmjs.org/react@18.2.0
+      use-sync-external-store: registry.npmjs.org/use-sync-external-store@1.2.0(react@18.2.0)
+    dev: false
